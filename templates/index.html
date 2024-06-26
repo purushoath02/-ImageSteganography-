@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steganography Example</title>
+</head>
+<body>
+    <h2>Upload Image and File</h2>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="image" accept=".png, .jpg, .jpeg, .gif">
+        <br><br>
+        <textarea name="text"></textarea>
+        <br><br>
+        <input type="submit" value="Upload and Encrypt">
+    </form>
+    <h2>Upload Image for decryption</h2>
+    <form method="POST" action="/decrypt" enctype="multipart/form-data">
+        <input type="file" name="d_image" accept=".png, .jpg, .jpeg, .gif">
+        <br><br>
+        <input type="submit" value="Decrypt">
+    </form>
+    
+</body>
+</html>
